@@ -6,6 +6,9 @@ This repository contains an implementation of a Deep Convolutional Generative Ad
 
 The project leverages a DCGAN architecture with a Generator and a Discriminator network. The Generator learns to produce fake images that mimic real CelebA images, while the Discriminator learns to distinguish between real and generated images. Training involves an adversarial process where both networks improve iteratively.
 
+## DCGAN Architecture
+![DCGAN Architecture](./DCGAN%20Architecture.png)
+
 ## Dataset Preprocessing Steps
 
 1. **Dataset Download**:  
