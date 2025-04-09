@@ -2,13 +2,13 @@
 
 **Posted on April 9, 2025**
 
----
+<div style="margin-top:15px;margin-bottom:15px;">---</div>
 
 ## Introduction
 
 Generative Adversarial Networks (GANs) have dramatically reshaped the field of generative modeling. By pitting two neural networks, a **generator** and a **discriminator**, against each other in an adversarial contest, GANs have enabled the creation of images, music, and even text that closely resemble real-world data. In this blog post, we take a comprehensive look at three prominent GAN architectures: **Least Squares GAN (LS-GAN)**, **Wasserstein GAN (WGAN)**, and **Wasserstein GAN with Gradient Penalty (WGAN-GP)**. We evaluate their performance on the **RetinaMNIST** dataset, using key metrics such as the **Inception Score (IS)** and **Fréchet Inception Distance (FID)** to highlight their strengths and nuances.
 
----
+<div style="margin-top:15px;margin-bottom:15px;">---</div>
 
 ## Understanding GANs and Their Uniqueness
 
@@ -31,7 +31,7 @@ The creativity behind GANs lies in their adversarial training strategy:
 - **Loss Function Variations:** The choice of loss function greatly influences training dynamics. Different GAN variants use different losses and regularization techniques to improve stability, convergence, and output quality.
 - **Diverse Applications:** From generating high-quality images to synthesizing novel art, GANs have diverse applications that benefit from their inherent ability to learn complex data distributions.
 
----
+<div style="margin-top:15px;margin-bottom:15px;">---</div>
 
 ## The RetinaMNIST Dataset
 
@@ -43,9 +43,10 @@ The **RetinaMNIST** dataset is a subset of the MedMNIST collection and is specif
 <div style="text-align: center;">
     <img src="RetinaMNIST.png" alt="RetinaMNIST_Dataset" width="750" />
 </div>
+
 This dataset provides a challenging yet manageable testbed for comparing GAN architectures, particularly in the context of medical image synthesis.
 
----
+<div style="margin-top:15px;margin-bottom:15px;">---</div>
 
 ## A Closer Look at GAN Architectures
 
@@ -70,7 +71,7 @@ This dataset provides a challenging yet manageable testbed for comparing GAN arc
 - **Improved Stability:** Leads to smoother training dynamics, although it increases the computational complexity during training.
 - **Architecture Similarity:** Shares architectural similarities with WGAN, with the primary difference being the incorporation of a gradient penalty in the training loop.
 
----
+<div style="margin-top:15px;margin-bottom:15px;">---</div>
 
 ## Training Details
 
@@ -82,7 +83,7 @@ For our comparative study, the following training setup was uniformly applied to
 
 Additionally, for WGAN and WGAN-GP, the critic was updated **five times** for every generator update. This strategy ensures that the critic remains robust, providing a reliable gradient that guides the generator’s improvements.
 
----
+<div style="margin-top:15px;margin-bottom:15px;">---</div>
 
 ## Evaluation Metrics
 
@@ -98,7 +99,7 @@ Evaluating the quality of GAN-generated images is challenging. Two metrics commo
 - **Mechanism:** Compares the statistics (mean and covariance) of features extracted from a pre-trained network for both real and synthetic images.
 - **Interpretation:** Lower FID values indicate that the generated images closely resemble the real ones in both quality and diversity, making this metric a strong indicator of practical performance.
 
----
+<div style="margin-top:15px;margin-bottom:15px;">---</div>
 
 ## Results and Discussion
 
@@ -118,13 +119,13 @@ The experimental results were as follows:
 - **FID Differentiation:** The lower FID of LS-GAN suggests that its images more faithfully capture the distribution of the real retinal images compared to WGAN-GP.
 - **Training Dynamics:** The stability observed in LS-GAN can be attributed to its least squares loss, which provides smoother training gradients, whereas the theoretical benefits of WGAN and WGAN-GP are more evident in other contexts or with more complex datasets.
 
----
+<div style="margin-top:15px;margin-bottom:15px;">---</div>
 
 ## Conclusion
 
-The detailed comparative analysis highlights that **LS-GAN** provides a robust framework for generating retinal images from the RetinaMNIST dataset. Despite the conceptual advantages of **WGAN** and **WGAN-GP**, especially in enforcing a meaningful distributional divergence,the practical performance for this particular application favors LS-GAN, as evidenced by its lower FID. The study underscores the importance of both theoretical innovations and practical training strategies in the development of generative models.
+The detailed comparative analysis highlights that **LS-GAN** provides a robust framework for generating retinal images from the RetinaMNIST dataset. Despite the conceptual advantages of **WGAN** and **WGAN-GP**, especially in enforcing a meaningful distributional divergence, the practical performance for this particular application favors LS-GAN, as evidenced by its lower FID. The study underscores the importance of both theoretical innovations and practical training strategies in the development of generative models.
 
----
+<div style="margin-top:15px;margin-bottom:15px;">---</div>
 
 ## Looking Ahead: Future Directions
 
@@ -134,16 +135,17 @@ The realm of GANs is rapidly evolving. Future research may explore:
 - **Advanced Training Techniques:** Investigating alternative regularization and normalization strategies to further enhance stability and performance.
 - **Broader Evaluation Metrics:** Incorporating additional metrics tailored to the nuances of medical image synthesis could provide a more holistic view of model performance.
 
----
+<div style="margin-top:15px;margin-bottom:15px;">---</div>
 
 ## References
 
-1. **Heusel, M., Ramsauer, H., Unterthiner, T., Nessler, B., & Hochreiter, S. (2017).** _GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium_. [Link](https://arxiv.org/pdf/1706.08500)
-2. **Gulrajani, I., Ahmed, F., Arjovsky, M., Dumoulin, V., & Courville, A. (2017).** _Improved Training of Wasserstein GANs_. [Link](https://arxiv.org/pdf/1704.00028)
-3. **Mao, X., Li, Q., Xie, H., Lau, R. Y., Wang, Z., & Paul Smolley, S. (2017).** _Least Squares Generative Adversarial Networks_. [Link](https://arxiv.org/pdf/1611.04076)
-4. **MedMNIST v2:** A Large-Scale Lightweight Benchmark for 2D and 3D Biomedical Image Classification. [Link](https://medmnist.com/)
-5. **A Review of Generative Adversarial Networks for Electronic Health Records: Applications, Evaluation Measures and Data Sources.** [Link](https://www.researchgate.net/publication/359227500_A_review_of_Generative_Adversarial_Networks_for_Electronic_Health_Records_applications_evaluation_measures_and_data_sources/figures?lo=1)
+1. **Heusel, M., Ramsauer, H., Unterthiner, T., Nessler, B., & Hochreiter, S. (2017).** _GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium_. [Link](https://arxiv.org/pdf/1706.08500)  
+2. **Gulrajani, I., Ahmed, F., Arjovsky, M., Dumoulin, V., & Courville, A. (2017).** _Improved Training of Wasserstein GANs_. [Link](https://arxiv.org/pdf/1704.00028)  
+3. **Mao, X., Li, Q., Xie, H., Lau, R. Y., Wang, Z., & Paul Smolley, S. (2017).** _Least Squares Generative Adversarial Networks_. [Link](https://arxiv.org/pdf/1611.04076)  
+4. **MedMNIST v2:** A Large-Scale Lightweight Benchmark for 2D and 3D Biomedical Image Classification. [Link](https://medmnist.com/)  
+5. **A Review of Generative Adversarial Networks for Electronic Health Records: Applications, Evaluation Measures and Data Sources.** [Link](https://www.researchgate.net/publication/359227500_A_review_of_Generative_Adversarial_Networks_for_Electronic_Health_Records_applications_evaluation_measures_and_data_sources/figures?lo=1)  
 6. **MedMNIST Data** [link](https://medmnist.com/)
 
----
+<div style="margin-top:15px;margin-bottom:15px;">---</div>
+
 ### **Posted by** - [Rohan Ingle](https://github.com/Rohan-ingle)
