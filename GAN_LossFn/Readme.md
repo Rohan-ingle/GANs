@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Generative Adversarial Networks (GANs) have dramatically reshaped the field of generative modeling. By pitting two neural networks—a **generator** and a **discriminator**—against each other in an adversarial contest, GANs have enabled the creation of images, music, and even text that closely resemble real-world data. In this blog post, we take a comprehensive look at three prominent GAN architectures: **Least Squares GAN (LS-GAN)**, **Wasserstein GAN (WGAN)**, and **Wasserstein GAN with Gradient Penalty (WGAN-GP)**. We evaluate their performance on the **RetinaMNIST** dataset, using key metrics such as the **Inception Score (IS)** and **Fréchet Inception Distance (FID)** to highlight their strengths and nuances.
+Generative Adversarial Networks (GANs) have dramatically reshaped the field of generative modeling. By pitting two neural networks, a **generator** and a **discriminator**, against each other in an adversarial contest, GANs have enabled the creation of images, music, and even text that closely resemble real-world data. In this blog post, we take a comprehensive look at three prominent GAN architectures: **Least Squares GAN (LS-GAN)**, **Wasserstein GAN (WGAN)**, and **Wasserstein GAN with Gradient Penalty (WGAN-GP)**. We evaluate their performance on the **RetinaMNIST** dataset, using key metrics such as the **Inception Score (IS)** and **Fréchet Inception Distance (FID)** to highlight their strengths and nuances.
 
 ---
 
@@ -122,7 +122,7 @@ The experimental results were as follows:
 
 ## Conclusion
 
-The detailed comparative analysis highlights that **LS-GAN** provides a robust framework for generating retinal images from the RetinaMNIST dataset. Despite the conceptual advantages of **WGAN** and **WGAN-GP**, especially in enforcing a meaningful distributional divergence—the practical performance for this particular application favors LS-GAN, as evidenced by its lower FID. The study underscores the importance of both theoretical innovations and practical training strategies in the development of generative models.
+The detailed comparative analysis highlights that **LS-GAN** provides a robust framework for generating retinal images from the RetinaMNIST dataset. Despite the conceptual advantages of **WGAN** and **WGAN-GP**, especially in enforcing a meaningful distributional divergence,the practical performance for this particular application favors LS-GAN, as evidenced by its lower FID. The study underscores the importance of both theoretical innovations and practical training strategies in the development of generative models.
 
 ---
 
@@ -144,3 +144,6 @@ The realm of GANs is rapidly evolving. Future research may explore:
 4. **MedMNIST v2:** A Large-Scale Lightweight Benchmark for 2D and 3D Biomedical Image Classification. [Link](https://medmnist.com/)
 5. **A Review of Generative Adversarial Networks for Electronic Health Records: Applications, Evaluation Measures and Data Sources.** [Link](https://www.researchgate.net/publication/359227500_A_review_of_Generative_Adversarial_Networks_for_Electronic_Health_Records_applications_evaluation_measures_and_data_sources/figures?lo=1)
 6. **MedMNIST Data** [link](https://medmnist.com/)
+
+---
+### **Posted by** - [Rohan Ingle](https://github.com/Rohan-ingle)
